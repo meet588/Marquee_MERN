@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td,
+      th {
+        border: 1px solid;
+        padding: 5px;
+      }
+      thead{
+        background-color: greenyellow;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+        <colgroup>
+        <col style="background-color: aqua;">
+    </colgroup>
+    <col style="background-color: rgb(234, 255, 0);">
+    </colgroup>
+    <col style="background-color: rgb(255, 255, 255);">
+    </colgroup>
+    <col style="background-color: rgb(255, 255, 255);">
+    </colgroup>
+      <caption>
+        This Table having employee Salary record
+      </caption>
+
+      <thead>
+        
+        <tr>
+          <th>Emp Code</th>
+          <th>Emp Name</th>
+          <th>Job Title</th>
+          <th>Salary(LPA)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>911</td>
+          <td>Zoya Shaikh</td>
+          <td>Developer</td>
+          <td >3.6</td>
+        </tr>
+        <tr>
+          <td>912</td>
+          <td>Lisa Dev</td>
+          <td>Tester</td>
+          <td rowspan="2">5.2</td>
+        </tr>
+        <tr>
+          <td>913</td>
+          <td>Deepal Jadeja</td>
+          <td>Developer</td>
+          
+        </tr>
+        <tr>
+          <td>914</td>
+          <td>Aiti Yelewe</td>
+          <td>Digital Marketing</td>
+          <td>4</td> 
+        </tr>
+        <tr>
+          <td>915</td>
+          <td>Simran Rao</td>
+          <td>HR</td>
+          <td>5.6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+    <tr style="background-color: #e6e6e6; font-weight: bold;">
+      <td colspan="4" style=" text-align: center;">This is Table footer</td>
+    
+    </tr>
+  </tfoot>
+    </table>
+  </body>
+</html>

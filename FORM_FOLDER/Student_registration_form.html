@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" method="get">
+    <h1 align="center">STUDENT REGISTRATION FORM</h1><table>
+          <!-- Names -->
+          <tr>
+            <td>FIRST NAME</td>
+            <td>
+              <input type="text" />
+              <span class="hint">(max 30 characters a-z and A-Z)</span>
+            </td>
+          </tr>
+          <tr>
+            <td>LAST NAME</td>
+            <td>
+              <input type="text" />
+              <span class="hint">(max 30 characters a-z and A-Z)</span>
+            </td>
+          </tr>
+
+          <!-- Date of Birth -->
+          <tr>
+            <td>DATE OF BIRTH</td>
+            <td>
+              Day:
+              <select name="day">
+                <option>1</option>
+              </select>
+              Month:
+              <select name="month">
+                <option>Jan</option>
+              </select>
+              Year:
+              <select name="year">
+                <option>2000</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Email & Mobile -->
+          <tr>
+            <td>EMAIL ID</td>
+            <td><input type="email" /></td>
+          </tr>
+          <tr>
+            <td>MOBILE NUMBER</td>
+            <td>
+              <input type="text" /> <span class="hint">(10 digit number)</span>
+            </td>
+          </tr>
+
+          <!-- Gender -->
+          <tr>
+            <td>GENDER</td>
+            <td>
+              Male <input type="radio" name="gender" /> Female
+              <input type="radio" name="gender" />
+            </td>
+          </tr>
+
+          <!-- Address Section -->
+          <tr>
+            <td>ADDRESS</td>
+            <td><textarea rows="4"></textarea></td>
+          </tr>
+          <tr>
+            <td>CITY</td>
+            <td>
+              <input type="text" />
+              <span class="hint">(max 30 characters)</span>
+            </td>
+          </tr>
+          <tr>
+            <td>PIN CODE</td>
+            <td>
+              <input type="text" /> <span class="hint">(6 digit number)</span>
+            </td>
+          </tr>
+          <tr>
+            <td>STATE</td>
+            <td>
+              <input type="text" />
+              <span class="hint">(max 30 characters)</span>
+            </td>
+          </tr>
+          <tr>
+            <td>COUNTRY</td>
+            <td><input type="text" value="India" readonly /></td>
+          </tr>
+</table>
+<tr>
+            <td>HOBBIES</td>
+            <td><input type="checkbox" />
+              Drawing <input type="checkbox" /> Singing
+              <input type="checkbox" /> Dancing
+              <input type="checkbox" />Sketching
+              <br><input type="checkbox" />
+              Others 
+             <td><input type="text" style="width: 150px" />
+            </td>
+        </td> 
+          </tr>
+          <tr>
+            <br><td>QUALIFICATION</td>
+            <td>
+              <table class="qual-table">
+                <tr>
+                  <th>Sl.No.</th>
+                  <th>Examination</th>
+                  <th>Board</th>
+                  <th>Percentage</th>
+                  <th>Year of Passing</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Class X</td>
+                  <td><input type="text" name="classX_board"/></td>
+                  <td><input type="text" name="classX_percentage"/></td>
+                  <td><input type="text" name="classX_passing_year"/></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Class XII</td>
+                  <td><input type="text" name="classXII_board"/></td>
+                  <td><input type="text" name="classXII_percentage"/></td>
+                  <td><input type="text" name="classXII_passing_year"/></td>
+                </tr>classX
+                <tr>
+                  <td>3</td>
+                  <td>Graduation</td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Masters</td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                  <td><input type="text" /></td>
+                </tr></table>
+</form>
+</body>
+</html>

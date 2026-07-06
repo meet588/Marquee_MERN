@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h2><mark>Sports Physical form</h2></mark>
+    </center>
+    <form action="actionpage.html" method="get">
+        <fieldset>
+            <legend>
+                <h4>Athlete Information</h4>
+            </legend>
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" name="username" id="name" placeholder="Enter your name" />
+
+                </li>
+                <li>
+                    <label for="school/Team">School/Team:</label>
+                    <input type="text" name="school/Team" id="school/Team" value="Parul University" readonly />
+
+                </li>
+                <li>
+                    <label for="Sport">Sport:</label>
+                    <input type="text" name="Sport" id="Sport" placeholder="eg.Cricket" />
+
+                </li>
+                <li>
+                    <label for="Parents/Guardian_Name">Parents/Guardian Name:</label>
+                    <input type="text" name="Parents/Guardian_Name" id="Parents/Guardian_Name" />
+
+                </li>
+                <li>
+                    <label for="Contact_Number">Contact Number:</label>
+                    <input type="text" name="Contact_Number" id="Contact_Number" />
+
+                </li>
+
+            </ul>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h4>Medical History For Athlete</h4>
+            </legend>
+            <ul>
+                <li>
+                    <label for="history_concussions"><strong>History of Concussions:</strong></label>
+                    <input type="radio" name="history_concussions" id="history_concussions_yes"
+                        value="history_concussions_yes" />
+
+                    <label for="history_concussions_yes">Yes</label>
+
+                    <input type="radio" name="history_concussions" id="history_concussions_no"
+                        value="history_concussions_no" />
+
+                    <label for="history_concussions_no">No</label>
+                </li>
+                <li>
+                    <label for="previous_surgeries"><strong>Previous Surgeries:</strong></label>
+                    <input type="text" name="previous_surgeries" id="previous_surgeries"
+                        placeholder="eg.Bone fracture" />
+
+                </li>
+                <li>
+                    <label for="bone_fracture"><strong>Any Bone fracture ?:</strong></label>
+                    <input type="radio" name="bone_fracture" id="bone_fracture_yes" value="bone_fracture_yes" />
+
+                    <label for="bone_fracture_yes">Yes</label>
+
+                    <input type="radio" name="bone_fracture" id="bone_fracture_no" value="bone_fracture_no" />
+                    <label for="bone_fracture_no">No</label>
+                </li>
+                </li>
+                <li><label for="breathing_problem"><strong>Ashthama or Any Breathing Problem:</strong>
+                        <input type="radio" name="breathing_problem" id="breathing_problem"
+                            value="breathing_problem_yes" />
+
+                        <label for="breathing_problem_yes">Yes</label>
+
+                        <input type="radio" name="breathing_problem" id="breathing_problem"
+                            value="breathing_problem_no" />
+                        <label for="breathing_problem_no">No</label>
+                    </label>
+                </li>
+
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Department</legend>
+            <select name="Department" id="Department">
+
+                <option value="null">Select Department</option>
+                <option value="cse">CSE</option>
+                <option value="ai_ml">AI-ML</option>
+                <option value="cyber_security">CYBER SECURITY</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Select your Hobbies</legend>
+            <input type="checkbox"><label for="football">Football</label>
+            <input type="checkbox">
+            <label for="volleyball">volleyball</label>
+            <input type="checkbox">
+            <label for="bad_minton">Badminton</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Email</legend>
+
+            <fieldset>
+                <legend>Email Details</legend>
+                <label for="email">Email:</label>
+                <input type="text" name="email" placeholder="Enter your mail">
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Enter your password">
+            </fieldset>
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Day/Time</legend>
+            <label for="date">Date:</label>
+            <input type="date"><br>
+            <label for="time">Time:</label>
+            <input type="time">
+            <label for="date-time">Date - Time</label>
+            <input type="datetime">
+        </fieldset>
+        <fieldset>
+            <legend>Document/Images</legend>
+            <label for="profile_image">Profile Image</label>
+            <input type="file" name="profile_image" id="profile_image" accept=".jpg, .png, .img, .jpeg">
+            <br><label for="pdf">Resume</label>
+            <input type="file" name="resume" id="" accept=".pdf,">
+            <br> <label for="pdf">Doc file</label>
+            <input type="file" name="doc" id="doc" accept=".docx">
+            <br> <label for="pdf">Execel file</label>
+            <input type="file" name="execel" id="execel" accept=".xlxs ">
+            
+        </fieldset>
+        
+        </fieldset>
+        <input type="submit" name="" value="SUBMIT">
+    </form>
+
+</body>
+
+</html>
