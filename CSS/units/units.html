@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f2f2f2;
+}
+
+/* First Div */
+.card{
+    width:320px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    position:relative;
+}
+
+/* Blue Top Section */
+.card::before{
+    content:"";
+    display:block;
+    height:140px;
+    background:#4f73e8;
+}
+
+/* Second Div */
+.content{
+    padding:70px 25px 25px;
+    text-align:center;
+}
+
+/* Profile Image */
+.content img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    border:5px solid #fff;
+    position:absolute;
+    top:85px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.content h2{
+    margin-bottom:5px;
+    color:#222;
+}
+
+.content p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+/* Social Icons */
+.social{
+    margin-bottom:20px;
+}
+
+.social i{
+    width:38px;
+    height:38px;
+    line-height:38px;
+    border-radius:50%;
+    color:#fff;
+    margin:0 5px;
+}
+
+.fa-facebook-f{background:#1877f2;}
+.fa-twitter{background:#1da1f2;}
+.fa-instagram{background:#e1306c;}
+.fa-youtube{background:#ff0000;}
+
+/* Buttons */
+.buttons{
+    margin-bottom:20px;
+}
+
+.buttons button{
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    background:#4f73e8;
+    color:white;
+    cursor:pointer;
+    margin:0 5px;
+}
+
+/* Stats */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    color:#555;
+    font-size:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrbPGiRMPdDhxbgdlXoIRk8TKQHFENjiaHZN9NDgr-aQ&s=10" alt="Profile">
+
+        <h2>CodingLab</h2>
+        <p>YouTuber & Blogger</p>
+
+        <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+
+        <div class="buttons">
+            <button>Subscribe</button>
+            <button>Message</button>
+        </div>
+
+        <div class="stats">
+            <span><i class="fa-regular fa-heart"></i> 60.4k</span>
+            <span><i class="fa-regular fa-comment"></i> 20k</span>
+            <span><i class="fa-solid fa-share"></i> 12.4k</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
