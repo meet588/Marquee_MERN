@@ -1,0 +1,112 @@
+
+*{
+    margin:0vw;
+    padding:0vw;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+}
+
+
+.services-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-section:hover{
+    color: red;
+}
+
+.services-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a365d; /* Dark Blue from the image */
+    margin-bottom: 60px;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 40px;
+}
+
+.service-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.icon-wrapper {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #000000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+  
+
+
+.icon-wrapper:hover{
+    color: rgb(255, 255, 255);
+    background-color:red ;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.services-grid:hover{
+     transform:translateY(-5px);
+    color: red;
+}
+
+.service-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000000;
+}
+.service-name:hover{
+    color: red;
+
+}
+
+.service-name.active-text {
+    color: #000000;
+}
+
+.service-description {
+    font-size: 0.95rem;
+    color: #666666;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+}

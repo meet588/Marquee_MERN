@@ -122,12 +122,12 @@
          border-right: 1px solid;
          border-color: #ddd;
          flex: 1;
-         background-color: aqua;
+         
          
        }
        .line2{
         flex: 1;
-        background-color: aqua;
+        
        }
       .stat-label {
         font-size: 14px;
